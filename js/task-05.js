@@ -1,14 +1,15 @@
 const refs = {
     input: document.querySelector('#name-input'),
-    span: document.querySelector('#name-output'),
+    name: document.querySelector('#name-output'),
 }
 
 
-input.addEventListener('input', onInput);
+refs.input.addEventListener('input', onInput);
 
 function onInput(event) {
-  refs.span = event.currentTarget;
-  if(input === '') {
-      return `Anonymous`
-  }
+  if(refs.input === '') {
+    return `Anonymous`
+} else {
+  refs.name.textContent = event.currentTarget.value;
+}
 }
