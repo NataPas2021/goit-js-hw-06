@@ -1,10 +1,21 @@
 
-const counterValue = 0;
+const buttons = document.querySelectorAll('button');
 
-const refs = {
-    buttonDecrement: document.querySelector('[data-action="decrement"]'),
-    value: document.querySelector('#value'),
-    buttonIncrement: document.querySelector('[data-action="increment"]'),
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        const action = this.dataset.action;
+        const input = this.parentElement.querySelector('#value');
+        const currentValue = +input.value; 
+        let newValue; 
 
-}
+        if(action === 'increment') {
+            newValue = currentValue + 1;
+        } else{
+
+        }
+        input.value = newValue; 
+    })
+})
+
+
 
