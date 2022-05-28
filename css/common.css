@@ -23,11 +23,13 @@ button {
   cursor: pointer;
 }
 
-ul  {
-  display: flex;
+ul {
   list-style-type: none;
   justify-content: center;
+}
 
+.gallery  {
+  display: flex;
 }
 
 .gallery-image {
