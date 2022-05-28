@@ -1,7 +1,3 @@
-//const categoriesListRef = document.querySelectorAll('#categories');
-//console.log('Number of categories', categoriesListRef.length);
-
-
 const numberOfCategoriesRef = document.querySelector('ul#categories');
 console.log('Number of categories:', numberOfCategoriesRef.children.length);
 
